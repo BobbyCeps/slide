@@ -1,0 +1,15 @@
+<div class="slides">
+  <% @slides.each do |slide| %>
+    <div class="slide">
+      <p>
+        <%= slide.desc %>
+      </p>
+      <p>
+        <%= slide.author %>
+      </p>
+      <p>
+        <%= image_tag slide.picture.url %>
+      </p>
+    </div>
+  <% end %>
+</div>
